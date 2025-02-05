@@ -1,0 +1,31 @@
+/*
+ * Default Custom CSS
+ *
+ * Copyright © 2020 Vincomobile. All rights reserved.
+ */
+
+/************************************************************
+ * Customizations for: app-loading-page
+ ************************************************************/
+
+.app-loading-page-container {
+    background: #b71c1c !important;
+}
+
+.app-loading-page-alert {
+    background-color: #e6990c !important;
+    box-shadow: 1px 1px 10px #0eef20 !important;
+}
+
+/************************************************************
+ * Customizations for: app-login-layout
+ ************************************************************/
+.app-login-layout-toolbar {
+    height: 6rem;
+}
+
+.app-login-layout-content {
+    background-size: 100% 100% !important;
+    background: url(images/alsaraluque_bg.jpg) no-repeat;
+}
+

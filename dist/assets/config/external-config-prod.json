@@ -1,0 +1,5 @@
+{
+    "rabbitUrl": "wss://rabbit.nucleo-cloud.com/ws",
+    "rabbitLogin": "simerabbit",
+    "rabbitPassword": "GrupoSime/9011"
+}

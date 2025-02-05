@@ -1,0 +1,25 @@
+/************************************************************
+ * Customizations for: app-loading-page
+ ************************************************************/
+
+.app-loading-page-container {
+    background: #d41313 !important;
+}
+
+/************************************************************
+ * Customizations for: app-login-layout
+ ************************************************************/
+.app-login-layout-toolbar {
+    height: 4rem;
+}
+
+.login-info-retail-container {
+    margin-top: 2rem !important;
+}
+
+/*.app-login-layout-info {
+    background-size: 100% 100% !important;
+    background: url(images/sime.png) no-repeat;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+}*/

@@ -1,0 +1,353 @@
+/*
+ * Template Name: Vincomobile Framework - UI/UX styles
+ *
+ * Copyright © 2020 Vincomobile. All rights reserved.
+ */
+
+
+/************************************************************
+ * Global Angular Material
+ ************************************************************/
+
+.mat-form-field-type-mat-date-range-input .mat-form-field-infix {
+    width: 100% !important;
+}
+
+.mat-dialog-container {
+    padding: 0px !important;
+    border-radius: 8px !important;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/************************************************************
+ * Snackbar
+ ************************************************************/
+.error-snackbar {
+    background-color: rgba(255,0,0,.9) !important;
+    color: white;
+}
+
+.warning-snackbar {
+    background-color: rgba(255,165,0,.9) !important;
+    color: white;
+}
+
+.success-snackbar {
+    background-color: rgba(0,128,0,.9) !important;
+    color: white;
+}
+
+.info-snackbar {
+    background-color: rgb(166, 224, 238) !important;
+    color: #1a1919;
+}
+
+/************************************************************
+ * Global Ui-UX
+ ************************************************************/
+
+.uiux-content-widget {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.uiux-colorview-table-container {
+    padding-left: 0.2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 0.2rem;
+}
+
+.uiux-dialog-actions {
+    padding: 1rem 1rem !important;
+    margin: 0 !important;
+}
+
+.uiux-dialog-actions button {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.uiux-spinner {
+    margin: 1rem;
+}
+
+
+.uiux-standard-color-picker {
+    display: flex;
+    gap: 5px;
+    .color-rounded {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+    }
+}
+
+.uiux-datatable-loading-container {
+    margin: 2rem;
+}
+
+/************************************************************
+ * Global dialog
+ ************************************************************/
+
+.uiux-global-dialog-actions {
+    padding: 1rem 2rem;
+    height: 4rem;
+}
+
+.uiux-dialog-title {
+    padding: 0.25rem 0.5em;
+}
+
+.uiux-dialog-close {
+    float: right;
+    cursor: pointer;
+    margin-top: 0.2rem;
+}
+
+
+/************************************************************
+ * Tab Manager Component (uiux-tab-manager)
+ ************************************************************/
+
+.uiux-tab-manager-container {
+    .uiux-tab-manager-fixed {
+        height: calc(100vh - 8rem) !important;
+    }
+    .mat-tab-body-wrapper {
+        height: 100%;
+        overflow: unset !important;
+    }
+    .mat-tab-label {
+        padding-left: 15px !important;
+        padding-right: unset !important;
+    }
+    .mat-tab-label .mat-tab-label-content {
+        width: 100%;
+    }
+}
+
+
+/************************************************************
+ * Datatable Component (uiux-datatable)
+ ************************************************************/
+
+.uiux-datatable-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .mat-card-header-text {
+        margin: 0 !important;
+        width: 100%;
+    }
+    .mat-card-header .mat-card-title {
+        margin-bottom: 0 !important;
+    }
+}
+
+
+/************************************************************
+ * Custom Datatable Component (uiux-custom-datatable)
+ ************************************************************/
+
+.uiux-custom-datatable-row-header {
+    font-size: 0.9rem;
+}
+
+.uiux-custom-datatable-cell-header {
+    font-weight: bold;
+    line-height: 3rem;
+
+    &:last-child {
+        padding-right: 1rem;
+    }
+}
+
+.uiux-custom-datatable-cell-header-check {
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+
+.uiux-custom-datatable-cell-check {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.uiux-custom-datatable-row {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #CCCCCC;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #dddddd;
+    }
+}
+
+.uiux-custom-datatable-cell {
+    padding-top: 0.5rem;
+    overflow: hidden;
+
+    &:last-child {
+        padding-right: 1rem;
+    }
+}
+
+
+/************************************************************
+ * Form Component (uiux-form)
+ ************************************************************/
+
+.uiux-form-container {
+    height: 100%;
+
+    .mat-card-header-text {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .mat-card-header .mat-card-title {
+        margin-bottom: 0 !important;
+    }
+
+    .mat-tab-group {
+        flex: 1;
+    }
+
+    .uiux-form-tabs {
+        .mat-tab-body-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            overflow: hidden;
+        }
+    }
+}
+
+.uiux-form-content-actions {
+    padding: 1rem 1rem 0 1rem;
+    height: 4rem;
+}
+
+
+/************************************************************
+ * Process Component (uiux-process)
+ ************************************************************/
+
+.uiux-process-container {
+    .mat-card-header-text {
+        margin: 0 !important;
+        width: 100%;
+    }
+    .mat-card-header .mat-card-title {
+        margin-bottom: 0 !important;
+    }
+}
+
+
+/************************************************************
+ * Chart Component (uiux-chart)
+ ************************************************************/
+
+.uiux-chart-container {
+    .mat-card-header-text {
+        margin: 0 !important;
+        width: 100%;
+    }
+    .mat-card-header .mat-card-title {
+        margin-bottom: 0 !important;
+    }
+}
+
+.uiux-chart-element-container {
+    height: 12rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    .uiux-chart-element-container {
+        height: 15rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .uiux-chart-element-container {
+        height: 18rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .uiux-chart-element-container {
+        height: 20rem;
+    }
+}
+
+/************************************************************
+ * Designer Component (uiux-designer)
+ ************************************************************/
+.uiux-designer-main-class {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/************************************************************
+ * Widgets (uiux-widget-*)
+ ************************************************************/
+.uiux-widget-title {
+
+}
+
+.uiux-widget-container {
+    .mat-card-header-text {
+        margin: 0 !important;
+        width: 100%;
+
+        .uiux-widget-chart-item {
+            background-color: unset !important;
+            color: unset !important;
+        }
+    }
+    .mat-card-header .mat-card-title {
+        margin-bottom: 0 !important;
+    }
+}
+
+/**********************************************************************************************************
+ * Custom styles for "custom-table" visualization
+ *
+ *      - .uiux-custom-datatable-<table name>-table-container: Table container
+ *      - .uiux-custom-datatable-<table name>-columns: Columns distribution (recommended => display: grid)
+ *      - .uiux-custom-datatable-<table name>-cell-header-<column name>: Cell column header
+ *      - .uiux-custom-datatable-<table name>-cell-<column name>: Cell item value
+ *      - .uiux-custom-datatable-<table name>-row-status-<row.customTableRowClass>:
+ *             Custom class depend on row value (must be defined a field: customTableRowClass)
+ **********************************************************************************************************/
+.uiux-custom-datatable-ad_rabbitmq_queue-row-status-OK {
+
+}
+
+.uiux-custom-datatable-ad_rabbitmq_queue-row-status-WARNING {
+    color: orange;
+}
+
+.uiux-custom-datatable-ad_rabbitmq_queue-row-status-ERROR {
+    color: red;
+}

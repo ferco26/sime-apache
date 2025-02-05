@@ -1,0 +1,29 @@
+/*
+ * Custom CSS for: Vincomobile DEMO (Retail)
+ *
+ * Copyright © 2020 Vincomobile. All rights reserved.
+ */
+
+/************************************************************
+ * Customizations for: app-loading-page
+ ************************************************************/
+
+.app-loading-page-container {
+    background: #1B5E20 !important;
+}
+
+/************************************************************
+ * Customizations for: app-login-layout
+ ************************************************************/
+.app-login-layout-toolbar {
+    height: 6rem;
+}
+
+.login-info-retail-container {
+    margin-top: 2rem !important;
+}
+
+.app-login-layout-info {
+    background-size: 100% auto !important;
+    background: url(images/testing_bg.jpg) no-repeat;
+}

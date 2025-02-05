@@ -1,0 +1,136 @@
+// -----------------------------------------------------------------------------------------------------
+// Material colors CSS
+// -----------------------------------------------------------------------------------------------------
+
+$matColors: (   //  50      100     200     300     400     500     600     700     800     900     A100    A200    A400    A700
+    'red':          #ffebee #ffcdd2 #ef9a9a #e57373 #ef5350 #f44336 #e53935 #d32f2f #c62828 #b71c1c #ff8a80 #ff5252 #ff1744 #d50000,
+    'pink':         #fce4ec #f8bbd0 #f48fb1 #f06292 #ec407a #e91e63 #d81b60 #c2185b #ad1457 #880e4f #ff80ab #ff4081 #f50057 #f50057,
+    'purple':       #f3e5f5 #e1bee7 #ce93d8 #ba68c8 #ab47bc #9c27b0 #8e24aa #7b1fa2 #6a1b9a #4a148c #ea80fc #e040fb #d500f9 #aa00ff,
+    'deep-purple':  #ede7f6 #d1c4e9 #b39ddb #9575cd #7e57c2 #673ab7 #5e35b1 #512da8 #4527a0 #311b92 #b388ff #7c4dff #651fff #6200ea,
+    'indigo':       #e8eaf6 #c5cae9 #9fa8da #7986cb #5c6bc0 #3f51b5 #3949ab #303f9f #283593 #1a237e #8c9eff #536dfe #3d5afe #304ffe,
+    'blue':         #e3f2fd #bbdefb #90caf9 #64b5f6 #42a5f5 #2196f3 #1e88e5 #1976d2 #1565c0 #0d47a1 #82b1ff #448aff #2979ff #2962ff,
+    'light-blue':   #e1f5fe #b3e5fc #81d4fa #4fc3f7 #29b6f6 #03a9f4 #039be5 #0288d1 #0277bd #01579b #80d8ff #40c4ff #00b0ff #0091ea,
+    'cyan':         #e0f7fa #b2ebf2 #80deea #4dd0e1 #26c6da #00bcd4 #00acc1 #0097a7 #00838f #006064 #84ffff #18ffff #00e5ff #00b8d4,
+    'teal':         #e0f2f1 #b2dfdb #80cbc4 #4db6ac #26a69a #009688 #00897b #00796b #00695c #004d40 #a7ffeb #64ffda #1de9b6 #00bfa5,
+    'green':        #e8f5e9 #c8e6c9 #a5d6a7 #81c784 #66bb6a #4caf50 #43a047 #388e3c #2e7d32 #1b5e20 #b9f6ca #69f0ae #00e676 #00c853,
+    'light-green':  #f1f8e9 #dcedc8 #c5e1a5 #aed581 #9ccc65 #8bc34a #7cb342 #689f38 #558b2f #33691e #ccff90 #b2ff59 #76ff03 #64dd17,
+    'lime':         #f9fbe7 #f0f4c3 #e6ee9c #dce775 #d4e157 #cddc39 #c0ca33 #afb42b #9e9d24 #827717 #f4ff81 #eeff41 #c6ff00 #aeea00,
+    'yellow':       #fffde7 #fff9c4 #fff59d #fff176 #ffee58 #ffeb3b #fdd835 #fbc02d #f9a825 #f57f17 #ffff8d #ffff00 #ffea00 #ffd600,
+    'amber':        #fff8e1 #ffecb3 #ffe082 #ffd54f #ffca28 #ffc107 #ffb300 #ffa000 #ff8f00 #ff6f00 #ffe57f #ffd740 #ffc400 #ffab00,
+    'orange':       #fff3e0 #ffe0b2 #ffcc80 #ffb74d #ffa726 #ff9800 #fb8c00 #f57c00 #ef6c00 #e65100 #ffd180 #ffab40 #ff9100 #ff6d00,
+    'deep-orange':  #fbe9e7 #ffccbc #ffab91 #ff8a65 #ff7043 #ff5722 #f4511e #e64a19 #d84315 #bf360c #ff9e80 #ff6e40 #ff3d00 #dd2c00,
+    'brown':        #efebe9 #d7ccc8 #bcaaa4 #a1887f #8d6e63 #795548 #6d4c41 #5d4037 #4e342e #3e2723 #efebe9 #efebe9 #efebe9 #efebe9,
+    'grey':         #fafafa #f5f5f5 #eeeeee #e0e0e0 #bdbdbd #9e9e9e #757575 #616161 #424242 #212121 #fafafa #fafafa #fafafa #fafafa,
+    'blue-grey':    #eceff1 #cfd8dc #b0bec5 #90a4ae #78909c #607d8b #546e7a #455a64 #37474f #263238 #eceff1 #eceff1 #eceff1 #eceff1
+);
+
+$matColorsText: (// 50      100     200     300     400     500     600     700     800     900     A100    A200    A400    A700
+    'red':          #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'pink':         #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'purple':       #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'deep-purple':  #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'indigo':       #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'blue':         #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'light-blue':   #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'cyan':         #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'teal':         #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'green':        #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'light-green':  #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'lime':         #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'yellow':       #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000,
+    'amber':        #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000,
+    'orange':       #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000,
+    'deep-orange':  #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #000000 #000000 #000000 #ffffff,
+    'brown':        #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'grey':         #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff,
+    'blue-grey':    #000000 #000000 #000000 #000000 #000000 #000000 #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff
+);
+
+$matColorsLight: (// 50      100     200     300     400     500     600     700     800     900     A100    A200    A400    A700
+    'red':          #ffffff #ffffff #ffcccb #ffa4a2 #ff867c #ff7961 #ff6f60 #ff6659 #ff5f52 #f05545 #ffbcaf #ff867f #ff616f #ff5131,
+    'pink':         #ffffff #ffeeff #ffc1e3 #ff94c2 #ff77a9 #ff6090 #ff5c8d #fa5788 #e35183 #bc477b #ffb2dd #ff79b0 #ff5983 #fd558f,
+    'purple':       #ffffff #fff1ff #ffc4ff #ee98fb #df78ef #d05ce3 #c158dc #ae52d4 #9c4dcc #7c43bd #ffb2ff #ff79ff #ff5bff #e254ff,
+    'deep-purple':  #ffffff #fff7ff #e6ceff #c7a4ff #b085f5 #9a67ea #9162e4 #8559da #7953d2 #6746c3 #e7b9ff #b47cff #a255ff #9d46ff,
+    'indigo':       #ffffff #f8fdff #d1d9ff #aab6fe #8e99f3 #757de8 #6f74dd #666ad1 #5f5fc4 #534bae #c0cfff #8f9bff #8187ff #7a7cff,
+    'blue':         #ffffff #eeffff #c3fdff #9be7ff #80d6ff #6ec6ff #6ab7ff #63a4ff #5e92f3 #5472d3 #b6e3ff #83b9ff #75a7ff #768fff,
+    'light-blue':   #ffffff #e6ffff #b6ffff #8bf6ff #73e8ff #67daff #63ccff #5eb8ff #58a5f0 #4f83cc #b5ffff #82f7ff #69e2ff #64c1ff,
+    'cyan':         #ffffff #e5ffff #b4ffff #88ffff #6ff9ff #62efff #5ddef4 #56c8d8 #4fb3bf #428e92 #baffff #76ffff #6effff #62ebff,
+    'teal':         #ffffff #e5ffff #b2fef7 #82e9de #64d8cb #52c7b8 #4ebaaa #48a999 #439889 #39796b #dbffff #9effff #6effe8 #5df2d6,
+    'green':        #ffffff #fbfffc #d7ffd9 #b2fab4 #98ee99 #80e27e #76d275 #6abf69 #60ad5e #4c8c4a #ecfffd #9fffe0 #66ffa6 #5efc82,
+    'light-green':  #ffffff #fffffb #f8ffd7 #e1ffb1 #cfff95 #bef67a #aee571 #99d066 #85bb5c #629749 #ffffc2 #e7ff8c #b0ff57 #9cff57,
+    'lime':         #ffffff #fffff6 #ffffce #ffffa6 #ffff89 #ffff6e #f5fd67 #e4e65e #d2ce56 #b4a647 #ffffb3 #ffff78 #fdff58 #e4ff54,
+    'yellow':       #ffffff #fffff7 #ffffcf #ffffa8 #ffff8b #ffff72 #ffff6b #fff263 #ffd95a #ffb04c #ffffbf #ffff5a #ffff56 #ffff52,
+    'amber':        #ffffff #ffffe5 #ffffb3 #ffff81 #fffd61 #fff350 #ffe54c #ffd149 #ffc046 #ffa040 #ffffb0 #ffff74 #fff64f #ffdd4b,
+    'orange':       #ffffff #ffffe4 #ffffb0 #ffe97d #ffd95b #ffc947 #ffbd45 #ffad42 #ff9d3f #ff833a #ffffb1 #ffdd71 #ffc246 #ff9e40,
+    'deep-orange':  #ffffff #ffffee #ffddc1 #ffbb93 #ffa270 #ff8a50 #ff844c #ff7d47 #ff7543 #f9683a #ffd0b0 #ffa06d #ff7539 #ff6434,
+    'brown':        #ffffff #fffffb #efdcd5 #d3b8ae #be9c91 #a98274 #9c786c #8b6b61 #7b5e57 #6a4f4b #ffffff #ffffff #ffffff #ffffff,
+    'grey':         #ffffff #ffffff #ffffff #ffffff #efefef #cfcfcf #a4a4a4 #8e8e8e #6d6d6d #484848 #ffffff #ffffff #ffffff #ffffff,
+    'blue-grey':    #ffffff #ffffff #e2f1f8 #c1d5e0 #a7c0cd #8eacbb #819ca9 #718792 #62727b #4f5b62 #ffffff #ffffff #ffffff #ffffff
+);
+
+$matColorsDark: (// 50      100     200     300     400     500     600     700     800     900     A100    A200    A400    A700
+    'red':          #ccb9bc #cb9ca1 #ba6b6c #af4448 #b61827 #ba000d #ab000d #9a0007 #8e0000 #7f0000 #c85a54 #c50e29 #c4001d #9b0000,
+    'pink':         #c9b2ba #c48b9f #bf5f82 #ba2d65 #b4004e #b0003a #a00037 #8c0032 #78002e #560027 #c94f7c #c60055 #bb002f #8e0038,
+    'purple':       #c0b3c2 #af8eb5 #9c64a6 #883997 #790e8b #6a0080 #5c007a #4a0072 #38006b #12005e #b64fc8 #aa00c7 #9e00c5 #7200ca,
+    'deep-purple':  #bbb5c3 #a094b7 #836fa9 #65499c #4d2c91 #320b86 #280680 #140078 #000070 #000063 #805acb #3f1dcb #0100ca #0a00b6,
+    'indigo':       #b6b8c3 #9499b7 #6f79a8 #49599a #26418f #002984 #00227b #001970 #001064 #000051 #5870cb #0043ca #0031ca #0026ca,
+    'blue':         #b1bfca #8aacc8 #5d99c6 #2286c3 #0077c2 #0069c0 #005cb2 #004ba0 #003c8f #002171 #4d82cb #005ecb #004ecb #0039cb,
+    'light-blue':   #afc2cb #82b3c9 #4ba3c7 #0093c4 #0086c3 #007ac1 #006db3 #005b9f #004c8c #002f6c #49a7cc #0094cc #0081cb #0064b7,
+    'cyan':         #aec4c7 #81b9bf #4bacb8 #009faf #0095a8 #008ba3 #007c91 #006978 #005662 #00363a #4bcbcc #00cbcc #00b2cc #62ebff,
+    'teal':         #aebfbe #82ada9 #4f9a94 #00867d #00766c #00675b #005b4f #004c40 #003d33 #00251a #75ccb9 #14cba8 #00b686 #008e76,
+    'green':        #b6c2b7 #97b498 #75a478 #519657 #338a3e #087f23 #00701a #00600f #005005 #003300 #88c399 #2bbd7e #00b248 #009624,
+    'light-green':  #bec5b7 #aabb97 #94af76 #7da453 #6b9b37 #5a9216 #4b830d #387002 #255d00 #003d00 #99cc60 #7ecb20 #32cb00 #1faa00,
+    'lime':         #c6c8b5 #bdc192 #b3bc6d #a8b545 #a0af22 #99aa00 #8c9900 #7c8500 #6c6f00 #524c00 #bfcc50 #b8cc00 #90cc00 #79b700,
+    'yellow':       #cccab5 #cbc693 #cbc26d #cabf45 #c9bc1f #c8b900 #c6a700 #c49000 #c17900 #bc5100 #cacc5d #c7cc00 #c7b800 #c7a500,
+    'amber':        #ccc5af #cbba83 #caae53 #c8a415 #c79a00 #c79100 #c68400 #c67100 #c56000 #c43e00 #cab350 #c8a600 #c79400 #c67c00,
+    'orange':       #ccc0ae #cbae82 #ca9b52 #c88719 #c77800 #c66900 #c25e00 #bb4d00 #b53d00 #ac1900 #caa052 #c77c02 #c56200 #c43c00,
+    'deep-orange':  #c8b7b5 #cb9b8c #c97b63 #c75b39 #c63f17 #c41c00 #b91400 #ac0800 #9f0000 #870000 #c96f53 #c53d13 #c30000 #a30000,
+    'brown':        #bdb9b7 #a69b97 #8c7b75 #725b53 #5f4339 #4b2c20 #40241a #321911 #260e04 #1b0000 #ffffff #ffffff #ffffff #ffffff,
+    'grey':         #c7c7c7 #c2c2c2 #bcbcbc #aeaeae #8d8d8d #707070 #494949 #373737 #1b1b1b #000000 #ffffff #ffffff #ffffff #ffffff,
+    'blue-grey':    #babdbe #9ea7aa #808e95 #62757f #4b636e #34515e #29434e #1c313a #102027 #000a12 #ffffff #ffffff #ffffff #ffffff
+);
+
+$matHues: 50 100 200 300 400 500 600 700 800 900 A100 A200 A400 A700;
+
+@mixin generate-color-bg-classes($cassName, $color, $colorText, $index) {
+    .#{$cassName} {
+        background-color: nth($color, $index) !important;
+        color: nth($colorText, $index) !important;
+    }
+}
+
+@mixin generate-color-classes($cassName, $color, $index) {
+    .#{$cassName} {
+        color: nth($color, $index) !important;
+    }
+}
+
+@mixin material-colors() {
+    @each $name, $color in $matColors {
+        @for $i from 1 through length($matHues) {
+            // Generate BG color classes
+            $hue: nth($matHues, $i);
+            $textColors: map-get($matColorsText, $name);
+            @include generate-color-bg-classes(#{$name}-#{$hue}-bg, $color, $textColors, $i);
+            @include generate-color-classes(#{$name}-#{$hue}, $color, $i);
+        }
+    }
+    @each $name, $color in $matColorsLight {
+        @for $i from 1 through length($matHues) {
+            // Generate BG color classes
+            $hue: nth($matHues, $i);
+            $textColors: map-get($matColorsText, $name);
+            @include generate-color-bg-classes(#{$name}-#{$hue}-light, $color, $textColors, $i);
+        }
+    }
+    @each $name, $color in $matColorsDark {
+        @for $i from 1 through length($matHues) {
+            // Generate BG color classes
+            $hue: nth($matHues, $i);
+            $textColors: map-get($matColorsText, $name);
+            @include generate-color-bg-classes(#{$name}-#{$hue}-dark, $color, $textColors, $i);
+        }
+    }
+}
+
+@include material-colors();

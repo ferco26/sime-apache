@@ -1,0 +1,60 @@
+@import "src/app/extensions/assets/variables.scss";
+
+/*
+ * Template Name: Vincomobile Framework - "custom-table" visualization
+ *
+ * Copyright © 2020 Vincomobile. All rights reserved.
+ */
+
+/**********************************************************************************************************
+ * Custom styles for "custom-table" visualization
+ *
+ *      - .uiux-custom-datatable-<table name>-table-container: Table container
+ *      - .uiux-custom-datatable-<table name>-columns: Columns distribution (recommended => display: grid)
+ *      - .uiux-custom-datatable-<table name>-cell-header-<column name>: Cell column header
+ *      - .uiux-custom-datatable-<table name>-cell-<column name>: Cell item value
+ *      - .uiux-custom-datatable-<table name>-row-status-<row.customTableRowClass>:
+ *             Custom class depend on row value (must be defined a field: customTableRowClass)
+ **********************************************************************************************************/
+
+.uiux-custom-datatable-pms_booking_header_room-row-status-check_in .uiux-custom-datatable-pms_booking_header_room-cell-lstBookingStatus {
+    color: $check-in-status;
+}
+
+.uiux-custom-datatable-pms_booking_header_room-row-status-cancelled .uiux-custom-datatable-pms_booking_header_room-cell-lstBookingStatus {
+    color: $cancelled-status;
+}
+
+.uiux-custom-datatable-pms_booking_header_room-row-status-in_attempt .uiux-custom-datatable-pms_booking_header_room-cell-lstBookingStatus {
+    color: $in-attempt-status;
+}
+
+.uiux-custom-datatable-pms_invoice_deposit-row-status-completed,
+.uiux-custom-datatable-pms_invoice_deposit_pend-row-status-completed {
+    color: $full-paid;
+}
+
+.uiux-custom-datatable-pms_invoice_deposit-row-status-pending,
+.uiux-custom-datatable-pms_invoice_deposit_pend-row-status-pending {
+    color: $not-paid;
+}
+
+.uiux-custom-datatable-pms_invoice_deposit-row-status-partially,
+.uiux-custom-datatable-pms_invoice_deposit_pend-row-status-partially {
+    color: $partially-paid;
+}
+
+.uiux-custom-datatable-pms_invoice_deposit-row-status-selected,
+.uiux-custom-datatable-seg_segment_rule_line-row-status-selected,
+.uiux-custom-datatable-pms_invoice_deposit_pend-row-status-selected {
+    background-color: $table-row-selected;
+    color: black;
+}
+
+.uiux-custom-datatable-seg_segment_rule_line-cell-showValue {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

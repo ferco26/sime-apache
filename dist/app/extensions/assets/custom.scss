@@ -1,0 +1,290 @@
+@import '@progress/kendo-theme-default';
+
+/*
+ * Template Name: Vincomobile Framework - Custom styles
+ *
+ * Copyright © 2020 Vincomobile. All rights reserved.
+ */
+
+/************************************************************
+ * Custom styles
+ ************************************************************/
+
+@import 'src/app/extensions/assets/variables';
+
+/*------------------------
+ * Global dialog
+ *------------------------*/
+
+.confirm-icon-info {
+    color: black;
+}
+
+.confirm-icon-warn {
+    color: orange;
+}
+
+.confirm-icon-error {
+    color: darkred;
+}
+
+.confirm-icon-success {
+    color: green;
+}
+
+
+/*------------------------
+ * Global customizations
+ *------------------------*/
+
+body.theme-default .mat-calendar-body-today:not(.mat-calendar-body-selected) {
+    border-color: rgba(0, 0, 0, 0.38);
+    background-color: deepskyblue;
+}
+
+::ng-deep .mat-tooltip {
+    /* your own custom styles here */
+    /* e.g. */
+    color: yellow;
+}
+
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button,
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+    color: #666666 !important;
+}
+
+.mat-optgroup-label {
+    font-weight: bold;
+    background-color: #CCCCCC;
+}
+
+/**
+ * Custom global styles
+ */
+.custom-global-table-header {
+    font-weight: bold;
+    background-color: #ddd;
+    padding-left: 1rem;
+}
+
+.custom-global-table-col {
+    padding-top: 0.4rem;
+}
+
+.custom-global-table-col:first-child {
+    padding-left: 1rem;
+}
+
+.custom-global-table-col-right {
+    padding-top: 0.4rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.custom-global-table-col-center {
+    padding-top: 0.4rem;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.custom-global-mini-fab-buttons {
+    text-align: center;
+}
+
+.custom-global-mini-fab-buttons button {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+}
+
+.custom-global-mini-fab-buttons mat-icon {
+    margin-top: -10px;
+}
+
+.custom-global-header-buttons {
+    text-align: center;
+}
+
+.custom-global-header-buttons button {
+    min-width: 56px;
+    margin-right: 0.5rem;
+}
+
+.custom-global-table-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/**
+ * Material
+ */
+.mat-raised-button:hover, .mat-flat-button:hover, .mat-icon-button:hover {
+    opacity: 0.8;
+}
+
+/**
+* utilities
+*/
+
+
+/**
+* GLOBALS
+ */
+input[type="number"] {
+    text-align: right;
+}
+
+input[type="time"] {
+    text-align: right;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    transform: scale(1.7);
+}
+
+.component-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/**
+EXPANSION PANELS AND CARDS
+ */
+
+.panel-height {
+    height: $panel-header-icon-height
+}
+
+@mixin back-he {
+    background-color: #cccccc;
+}
+
+@mixin back-co {
+    background-color: #fafafa;
+}
+
+.modal-container {
+    height: 700px;
+    overflow-x: auto;
+
+    .content {
+        height: 100%;
+
+        .mat-card {
+            @include back-co;
+        }
+
+        .mat-expansion-panel-header {
+            @include back-he;
+            height: 43px !important;
+        }
+
+        .mat-expansion-panel {
+            @include back-co;
+        }
+    }
+}
+
+.div-footer {
+    position: sticky;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 1100px) {
+    .modal-container {
+        height: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-container {
+        height: 400px;
+    }
+}
+
+// check box without margins
+.mat-checkbox.no-margins .mat-checkbox-layout {
+    margin: 0;
+}
+
+// vertical tabs
+.mat-tab-group.vertical-tab-group {
+    flex-direction: row;
+
+    .mat-tab-body-wrapper {
+        flex: 1 1 auto;
+    }
+
+    .mat-tab-header {
+        overflow: auto !important;
+        border-bottom: none;
+        //max-height: calc(100% - 180px - 1rem);
+
+        .mat-tab-header-pagination {
+            display: none;
+            visibility: collapse;
+        }
+
+        .mat-tab-label-container {
+            overflow: auto;
+
+            .mat-tab-list {
+                .mat-ink-bar {
+                    height: 0;
+                    left: 98% !important;
+                }
+
+                .mat-tab-labels {
+                    overflow: auto !important;
+                    flex-direction: column;
+
+                    .mat-tab-label {
+                        opacity: 1;
+                        transition: border-right-color .2s;
+                        border-right: 2px solid transparent;
+                    }
+
+                    .mat-tab-label.mat-tab-label-active {
+                        // TODO: change color for var
+                        border-right: 2px solid blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+$default-active-bg: transparent;
+$default-label-border-radius: 0px;
+
+.mat-tab-group.styled-label {
+    .mat-tab-header {
+        .mat-tab-label-container {
+            .mat-tab-list {
+                max-height: calc(100vh - 319px);
+
+                .mat-tab-labels {
+                    .mat-tab-label {
+                        opacity: 1;
+                        transition: background-color .2s, color .2s;
+                        // set this variable in your component to change style
+                        border-radius: var(--label-border-radius, $default-label-border-radius);
+                    }
+
+                    .mat-tab-label.mat-tab-label-active {
+                        // set this variable in your component to change style
+                        color: var(--label-active-color, currentColor);
+                        background-color: var(--label-active-bg, $default-active-bg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mat-expansion-panel.no-paddings .mat-expansion-panel-content .mat-expansion-panel-body {
+    padding: 0;
+}
